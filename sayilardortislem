@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ float birinci;
+ float ikinci;
+int main() {
+
+  printf("Ilk sayinizi giriniz : \n");
+  scanf("%f", &birinci);
+  printf("Ikinci sayinizi giriniz : \n");
+  scanf("%f", &ikinci);
+
+  printf("Toplaminiz \n %.2f \n", birinci+ikinci);
+  printf("Farkiniz \n %.2f \n", birinci-ikinci);
+  printf("Carpiminiz \n %.2f \n", birinci*ikinci);
+  printf("Bolmeniz \n %.2f \n", birinci/ikinci);
+
+
+}
