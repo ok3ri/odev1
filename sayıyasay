@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+int sayi;
+
+int main()
+{
+    printf("Sayinizi giriniz : \n");
+    scanf("%d", &sayi);
+
+     for ( int sayi2=0 ; sayi2 < sayi; sayi2++) {
+
+     if (sayi<50) {
+        break;
+     }
+     if (sayi2%3 == 0){
+       continue;
+
+    }
+    printf("%d\n", sayi2);
+    }
+
+    return 0;
+}
