@@ -7,16 +7,16 @@ int main()
     printf("Sayinizi giriniz : \n");
     scanf("%d", &sayi);
 
-     for ( int sayi2=0 ; sayi2 < sayi; sayi2++) {
+     for ( int i=0 ; i< sayi; i++) {
 
-     if (sayi<50) {
+     if (i>50) {
         break;
      }
-     if (sayi2%3 == 0){
+     if (i%3 == 0){
        continue;
 
     }
-    printf("%d\n", sayi2);
+    printf("%d\n", i);
     }
 
     return 0;
