@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+ float sayi;
+
+int main()
+{
+    printf(" Sayinizi giriniz: \n ");
+    scanf("%f",&sayi);
+
+    if (sayi>0){
+        printf("Sayiniz pozitiftir");
+    }
+    else if (sayi==0){
+        printf("Sayiniz notrdur");
+
+    }
+    else {
+        printf("Sayiniz negatiftir");
+    }
+
+}
