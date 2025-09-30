@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+float x;
+float y;
+float z;
+float t;
+float ortalama;
+int main()
+{
+
+    for (int i=1 ;i<6; i++){
+
+    printf(" %d. Ogrenci \n",i);
+
+    printf("1. Notu Giriniz : ");
+    scanf("%f", &x);
+    if(x>100){
+        printf("Gecersiz not girdiniz \n");
+        i--;
+    continue;
+    }
+
+    printf("2. Notu Giriniz : ");
+    scanf("%f", &y);
+     if(y>100){
+        printf("Gecersiz not girdiniz \n");
+        i--;
+    continue;
+    }
+
+    printf("3. Notu Giriniz : ");
+    scanf("%f", &z);
+     if(z>100){
+        printf("Gecersiz not girdiniz \n");
+        i--;
+    continue;
+    }
+
+    printf("4. Notu Giriniz : ");
+    scanf("%f", &t);
+     if(t>100){
+      printf("Gecersiz not girdiniz \n");
+      i--;
+    continue;
+    }
+
+
+
+
+
+    ortalama=(float)(x+y+z+t)/4;
+    printf("Ortalamaniz %f \n",ortalama);
+
+
+
+
+
+    if (ortalama<50){
+        printf("Kaldiniz \n");
+    }
+        else {
+            printf("Gectiniz \n ");
+        }
+
+    }
+
+    }
