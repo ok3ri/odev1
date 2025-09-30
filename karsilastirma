@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    int y;
+    int z;
+
+    printf("1. Sayiyi girin: ");
+    scanf("%d", &x);
+    printf("2. Sayiyi girin: ");
+    scanf("%d", &y);
+    printf("3. Sayiyi girin: ");
+    scanf("%d", &z);
+
+//x en kucuk z en buyuk sayimimiz olmasını istiyoruz. o yuzden surekli olarak buyuk olanı saga aliyoruz. yani x'i y'e tasiyoruz. sonra z'e tasiyoruz.
+    if (x > y) {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+    if (x > z) {
+        int temp = x;
+        x = z;
+        z = temp;
+    }
+    if (y > z) {
+        int temp = y;
+        y = z;
+        z = temp;
+    }
+
+    printf("Kucukten buyuge: %d < %d < %d\n", x, y, z);
+
+    return 0;
+}
