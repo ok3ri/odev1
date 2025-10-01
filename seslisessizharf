@@ -1,20 +1,31 @@
 #include <stdio.h>
+#include <ctype.h> //hocam bu kütüphaneyi kullanmak zorunda kaldım. başka bir yolu yok sanırım bundan basit.
 
 int main()
+
 {
     char harf;
 
-    printf("Bir harf giriniz: ");
+
+
+   for(int i=0; i<1; i++){
+    printf("Bir harf giriniz:");
     scanf(" %c", &harf);
 
+   if(isalpha(harf)){
     if (harf == 'a'||harf == 'e'||harf == 'i'||harf == 'o'||harf == 'u'||harf == 'A'||harf == 'E'||harf == 'I'||harf == 'O'||harf == 'U')
     {
         printf("Sesli harf \n");
     }
-    else
-    {
+    else  {
+
         printf("Sessiz harf \n");
     }
-
+   }
+   else{
+    printf("Harf disinda karakter girildi \n");
+    i--;
+   }
+   }
     return 0;
 }
