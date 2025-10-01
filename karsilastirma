@@ -2,9 +2,9 @@
 
 int main()
 {
-    int x;
-    int y;
-    int z;
+    int x;//3
+    int y;//2
+    int z;//1
 
     printf("1. Sayiyi girin: ");
     scanf("%d", &x);
@@ -13,7 +13,8 @@ int main()
     printf("3. Sayiyi girin: ");
     scanf("%d", &z);
 
-//x en kucuk z en buyuk sayimimiz olmasını istiyoruz. o yuzden surekli olarak buyuk olanı saga aliyoruz. yani x'i y'e tasiyoruz. sonra z'e tasiyoruz.
+//hocam x en kucuk z en buyuk sayimimiz olmasýný istiyoruz. o yuzden surekli olarak buyuk olaný saga aliyoruz. yani x'i y'e tasiyoruz. sonra z'e tasiyoruz.
+//kısaca eger x y den buyuksek iki sayiyi degistiriz. x z den buyukse yer degistiririz. y z den buyukse yer degistiriz. boylece sıralamayı x y z yaptık hocam.
     if (x > y) {
         int temp = x;
         x = y;
