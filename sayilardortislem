@@ -10,10 +10,17 @@ int main() {
   printf("Ikinci sayinizi giriniz : \n");
   scanf("%f", &ikinci);
 
-  printf("Toplaminiz \n %.2f \n", birinci+ikinci);
-  printf("Farkiniz \n %.2f \n", birinci-ikinci);
-  printf("Carpiminiz \n %.2f \n", birinci*ikinci);
-  printf("Bolmeniz \n %.2f \n", birinci/ikinci);
+
+  printf("Toplaminiz : %.2f \n", birinci+ikinci);
+  printf("Farkiniz : %.2f \n", birinci-ikinci);
+  printf("Carpiminiz : %.2f \n", birinci*ikinci);
+  if (ikinci>0){
+  printf("Bolmeniz : %.2f \n", birinci/ikinci);
+  }
+  else{
+    printf("Bolmeniz Tanimsizdir");
+  }
+
 
 
 }
